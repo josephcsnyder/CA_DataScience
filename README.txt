@@ -1,1 +1,1 @@
-Test for GIT and GITHUB
+Collection of excercises completed on Code Academy Data Science Path
