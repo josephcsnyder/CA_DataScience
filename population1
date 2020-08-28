@@ -1,0 +1,38 @@
+-- This is the first query:
+
+SELECT DISTINCT year from population_years;
+
+-- Largest population of Gabon:
+
+SELECT * FROM population_years
+WHERE country = 'Gabon'
+ORDER BY population DESC
+LIMIT 1;
+
+-- Smallest populated countries in 2005:
+
+SELECT * FROM population_years
+WHERE year = 2005
+ORDER BY population ASC
+LIMIT 10;
+
+-- Countries with population >100 million in 2010:
+
+SELECT DISTINCT country
+FROM population_years
+WHERE population > 100
+  AND year = 2010;
+
+-- Countries containing "islands":
+
+SELECT DISTINCT country 
+FROM population_years
+WHERE country LIKE '%Islands%';
+
+-- Difference in population in Indonesia 2000/2010:
+
+SELECT * FROM population_years
+WHERE country = 'Indonesia'
+  AND year = 2000
+  OR country = 'Indonesia'
+  AND year = 2010;
