@@ -1,0 +1,1 @@
+Collection of SQL excercises completed on Code Academy Data Science Path
