@@ -1,5 +1,5 @@
 # simple linear regression project
-# start by entering your datapoints below
+# start by entering your datapoints to the list below
 
 datapoints = [(1, 2), (2, 0), (3, 4), (4, 4), (5, 3)]
 
